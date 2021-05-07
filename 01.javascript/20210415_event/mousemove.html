@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mousemove</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <style>
+        img{position: absolute; top: 300px;left: 100px;}
+    </style>
+</head>
+<body>
+    <img src="../../images/testimg.jpg" alt="" onmousemove="where(event)">
+    <div class="txt"></div>
+    
+    <script>
+    function where(e){
+////      console.log("x좌표" + e.clientX + ",Y좌표" + e.clientY)
+//        let tet = "clientX" + e.clientX + ",clienteY" + e.clientY + <br>;
+//        txt +="offsetX :" + e.offsetX + ",offsetY : " + e.offsetY; 
+        
+        let txt = `clientX : ${e.clientX}, clientY : ${e.clientY}`
+        
+        document.querySelector(".txt").innerHTML = txt;
+    }
+    </script>
+</body>
+</html>
