@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flex_Menu</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+      .menu {display:flex; hegiht:100vh}
+      .menu-iteam {background: gold; transition:0.3s; flex:1;}
+      .menu-iteam:hover {background: skyblue; flex:1.5}
+      .menu-iteam a {display:flex; height: 100vh; text-align: center; justify-content:center; align-items:center;}
+
+      @medai screen and (max-width:700px;){
+          .menu{flex-direction:column}
+          .menu-item a{height:25vh}
+      }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <div class="menu-iteam"><a href="#">menu1</a></div>
+    <div class="menu-iteam"><a href="#">menu2</a></div>
+    <div class="menu-iteam"><a href="#">menu3</a></div>
+    <div class="menu-iteam"><a href="#">menu4</a></div>
+  </div>
+</body>
+</html>
